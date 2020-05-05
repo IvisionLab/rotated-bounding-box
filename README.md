@@ -1,5 +1,15 @@
-# Rotated object detection with forward-looking sonar in underwater applications
+# Rotated object detection
+
+This code uses Mask-RCNN implementation of https://github.com/matterport/Mask_RCNN as base.
 
 ### The source code will be available soon.
 
-This repository will contain the source codes of **rboxnet** and **yolov2+rboxdnet** networks. These networks are used to detect rotated objects in forward-looking sonar images.
+RBoxNet is a CNN to detect rotated bounding box. Your first goal was to detect
+objects in images of forward-looking sonars. RBoxNet modifies the removes the semantic
+segmentation part from Mask-RCNN and include news layers for rotated bounding box.
+
+We have tested here three different approaches for rotated bounding box detections.
+
+* Vertices (verts)
+* Box offsets (deltas)
+* Orientation and Size (rotdim)
