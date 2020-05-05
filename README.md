@@ -5,8 +5,9 @@ This code uses Mask-RCNN implementation of https://github.com/matterport/Mask_RC
 ### The source code will be available soon.
 
 RBoxNet is a CNN to detect rotated bounding box. Your first goal was to detect
-objects in images of forward-looking sonars. RBoxNet modifies the removes the semantic
-segmentation part from Mask-RCNN and include news layers for rotated bounding box.
+objects in images of forward-looking sonars. RBoxNet removes the semantic
+segmentation part from Mask-RCNN and includes news layers for rotated bounding box
+regression.
 
 We have tested here three different approaches for rotated bounding box detections.
 
